@@ -31,7 +31,7 @@ export const HeroSection = () => {
           {/* Main Headline */}
           <h1 className="font-fredoka text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight max-w-5xl mx-auto">
             Descubra a{" "}
-            <span className="text-soft-blue">técnica americana</span> que
+            <span className="text-soft-blue">técnica japonesa</span> que
             ensina as crianças a ler{" "}
             <span className="text-navy">até</span>{" "}
             <span className="text-coral">5 vezes mais rápido</span>
