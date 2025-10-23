@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, Lock } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup.jpg";
+import heroMockup from "@/assets/hero-mockup.png";
 
 export const HeroSection = () => {
   const scrollToCheckout = () => {
