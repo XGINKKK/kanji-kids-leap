@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
   "build": "vite build",
-  "vercel-build": "V=3.3.0; curl -sL https://github.com/git-lfs/git-lfs/releases/download/v${V}/git-lfs-linux-amd64-v${V}.tar.gz | tar xz && ./install.sh || true && git lfs install && git lfs pull && npm run build",
+  "vercel-build": "sh -lc 'if command -v git-lfs >/dev/null 2>&1; then echo \"git-lfs already installed\"; else if command -v apt-get >/dev/null 2>&1; then apt-get update && apt-get install -y git-lfs || true; fi; if ! command -v git-lfs >/dev/null 2>&1; then V=3.3.0; URL=https://github.com/git-lfs/git-lfs/releases/download/v${V}/git-lfs-linux-amd64-v${V}.tar.gz; echo \"Downloading ${URL}\"; curl -fSL \"$URL\" -o /tmp/git-lfs.tar.gz && tar -xzf /tmp/git-lfs.tar.gz -C /tmp && /tmp/install.sh || true; fi; git lfs install || true; git lfs pull || true; npm run build'",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
