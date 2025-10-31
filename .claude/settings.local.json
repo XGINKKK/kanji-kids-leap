@@ -22,7 +22,8 @@
       "Bash(npm install:*)",
       "Bash(npx playwright:*)",
       "Bash(del nul)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
