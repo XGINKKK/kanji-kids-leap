@@ -63,20 +63,32 @@ export const HeroSection = () => {
             ))}
           </div>
 
+          {/* Social Proof Badge */}
+          <div className="inline-flex items-center gap-3 px-6 py-3 bg-mint/20 border-2 border-mint/40 rounded-full">
+            <div className="flex -space-x-2">
+              {[1, 2, 3, 4].map((i) => (
+                <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-coral to-primary border-2 border-white" />
+              ))}
+            </div>
+            <p className="font-nunito text-sm md:text-base font-semibold text-navy">
+              +15.000 famílias já garantiram acesso
+            </p>
+          </div>
+
           {/* CTA Button */}
-          <div className="space-y-4 pt-6">
+          <div className="space-y-4 pt-6 px-4">
             <Button
               onClick={scrollToCheckout}
               variant="hero"
               size="xl"
-              className="animate-pulse-soft font-nunito text-lg px-12"
+              className="font-nunito font-bold text-base md:text-lg px-8 md:px-12 w-full md:w-auto hover:scale-[1.02] transition-all duration-300 animate-pulse-subtle"
             >
               Quero meu pequeno lendo rápido!
             </Button>
 
-            <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
-              <Lock className="w-4 h-4" />
-              <span>🔒 Compra 100% Segura + Garantia de 30 dias</span>
+            <div className="flex items-center justify-center gap-2 text-sm md:text-sm text-muted-foreground">
+              <Lock className="w-4 h-4 md:w-4 md:h-4" />
+              <span>🔒 Compra 100% Segura + Garantia de 7 dias</span>
             </div>
           </div>
         </div>

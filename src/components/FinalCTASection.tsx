@@ -37,13 +37,13 @@ export const FinalCTASection = () => {
           </p>
 
           {/* CTA Button */}
-          <div className="pt-6">
+          <div className="pt-6 px-4">
             <Button
               onClick={scrollToCheckout}
               size="xl"
-              className="bg-primary-foreground text-primary font-bold hover:bg-primary-foreground/90 shadow-2xl hover:shadow-3xl hover:scale-105 animate-pulse-soft font-nunito text-lg px-12"
+              className="bg-primary-foreground text-primary font-bold hover:bg-primary-foreground/90 shadow-2xl hover:shadow-3xl hover:scale-105 font-nunito text-base md:text-lg px-8 md:px-12 py-5 md:py-6 w-full md:w-auto"
             >
-              Quero meu filho lendo com o método japonês!
+              Quero o método japonês agora!
             </Button>
           </div>
 
@@ -51,7 +51,7 @@ export const FinalCTASection = () => {
           <div className="pt-8 flex flex-wrap justify-center gap-6 text-primary-foreground/95">
             {[
               "Acesso imediato",
-              "Garantia incondicional de 30 dias",
+              "Garantia incondicional de 7 dias",
               "Suporte pedagógico incluído",
               "Método comprovado há séculos",
             ].map((badge, index) => (

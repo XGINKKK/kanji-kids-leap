@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import iconBrainLearning from "@/assets/icon-brain-learning.jpg";
 import icon10Minutes from "@/assets/icon-10-minutes.jpg";
 import iconJapaneseMethod from "@/assets/icon-japanese-method.jpg";
@@ -39,6 +40,10 @@ const benefits = [
 ];
 
 export const BenefitsSection = () => {
+  const scrollToPricing = () => {
+    document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-20 bg-card">
       <div className="container mx-auto px-4">
@@ -76,6 +81,18 @@ export const BenefitsSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center mt-12 px-4">
+          <Button
+            onClick={scrollToPricing}
+            variant="hero"
+            size="lg"
+            className="font-nunito font-bold text-base md:text-lg px-8 md:px-12 w-full md:w-auto"
+          >
+            Quero o método japonês!
+          </Button>
         </div>
       </div>
     </section>

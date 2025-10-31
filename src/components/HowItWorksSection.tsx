@@ -15,7 +15,7 @@ export const HowItWorksSection = () => {
           </h2>
 
           {/* Content */}
-          <div className="space-y-6 font-inter text-base md:text-lg text-foreground/90 leading-relaxed">
+          <div className="space-y-6 font-inter text-base md:text-lg text-foreground/90 leading-relaxed text-center md:text-left">
             <p>
               Você sabia que o{" "}
               <span className="font-bold text-primary">Japão possui uma taxa de alfabetização de 99,9%</span>? E que

@@ -1,6 +1,11 @@
 import { Shield } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const GuaranteeSection = () => {
+  const scrollToPricing = () => {
+    document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-20 bg-beige/70">
       <div className="container mx-auto px-4">
@@ -14,14 +19,14 @@ export const GuaranteeSection = () => {
 
               {/* Title */}
               <h2 className="font-fredoka text-3xl md:text-4xl font-bold text-navy">
-                Garantia de Satisfação Total de 30 Dias
+                Garantia de Satisfação Total de 7 Dias
               </h2>
 
               {/* Description */}
               <div className="space-y-4 font-inter text-base md:text-lg text-foreground/90 leading-relaxed">
                 <p>
-                  Teste o Kit Kanji Kids™ por <span className="font-bold text-primary">30 dias completos</span>. 
-                  Se você não estiver completamente satisfeita com a evolução do seu filho na leitura, 
+                  Teste o Kit Kanji Kids™ por <span className="font-bold text-primary">7 dias completos</span>.
+                  Se você não estiver completamente satisfeita com a evolução do seu filho na leitura,
                   devolvemos <span className="font-bold text-primary">100% do seu investimento</span>.
                 </p>
                 <p className="font-bold">
@@ -38,7 +43,7 @@ export const GuaranteeSection = () => {
                   <div className="w-8 h-8 rounded-full bg-success/20 flex items-center justify-center">
                     <span className="text-success font-bold">📅</span>
                   </div>
-                  <span className="font-nunito">30 dias</span>
+                  <span className="font-nunito">7 dias</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <div className="w-8 h-8 rounded-full bg-success/20 flex items-center justify-center">
@@ -52,6 +57,18 @@ export const GuaranteeSection = () => {
                   </div>
                   <span className="font-nunito">Sem burocracia</span>
                 </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="pt-6">
+                <Button
+                  onClick={scrollToPricing}
+                  variant="hero"
+                  size="lg"
+                  className="font-nunito font-bold text-base md:text-lg px-8 md:px-12"
+                >
+                  Quero começar sem riscos!
+                </Button>
               </div>
             </div>
           </div>

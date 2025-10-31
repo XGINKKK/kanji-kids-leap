@@ -42,8 +42,8 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-nunito font-bold text-lg">Suporte</h4>
             <ul className="space-y-2 font-inter text-sm text-primary-foreground/80">
-              <li>📧 suporte@kanjikids.com.br</li>
-              <li>📱 WhatsApp: (11) 9xxxx-xxxx</li>
+              <li>📧 suportekanjakids@gmail.com</li>
+              <li>📱 WhatsApp: (47) 99768-2599</li>
               <li>🕒 Seg-Sex: 9h-18h</li>
             </ul>
           </div>
@@ -55,20 +55,9 @@ export const Footer = () => {
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
+                aria-label="Instagram"
               >
                 📷
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
-              >
-                📘
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
-              >
-                ▶️
               </a>
             </div>
           </div>
@@ -79,13 +68,10 @@ export const Footer = () => {
           <div className="flex flex-wrap justify-center gap-4 text-xs text-primary-foreground/60">
             <span>🔒 SSL/HTTPS</span>
             <span>💳 Compra Segura</span>
-            <span>✅ Garantia 30 dias</span>
+            <span>✅ Garantia 7 dias</span>
           </div>
           <p className="text-center font-inter text-sm text-primary-foreground/70">
             © 2025 Kit Kanji Kids™ - Todos os direitos reservados
-          </p>
-          <p className="text-center font-inter text-xs text-primary-foreground/60">
-            CNPJ: XX.XXX.XXX/XXXX-XX
           </p>
         </div>
       </div>
