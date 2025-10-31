@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
   "build": "vite build",
-  "vercel-build": "curl -sL https://github.com/git-lfs/git-lfs/releases/latest/download/git-lfs-linux-amd64-v3.tar.gz | tar xz && ./install.sh || true && git lfs install && git lfs pull && npm run build",
+  "vercel-build": "V=3.3.0; curl -sL https://github.com/git-lfs/git-lfs/releases/download/v${V}/git-lfs-linux-amd64-v${V}.tar.gz | tar xz && ./install.sh || true && git lfs install && git lfs pull && npm run build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
